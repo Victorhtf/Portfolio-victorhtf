@@ -1,0 +1,57 @@
+@use '../mixins'
+@use '../variables'
+
+.stacks-container
+    margin-bottom: 1rem
+
+        
+    .stacks-grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5rem
+    
+    
+        .stacks-card
+            @include mixins.center
+            gap: 1rem
+            padding: 1rem
+            border: 1px solid #333
+            widht: 45%
+            border-radius: variables.$card-border-radius
+
+            h3
+                color: variables.$text-color
+                margin-bottom: 1rem
+
+            svg
+                font-size: 6rem
+
+        #html
+            svg
+                color: #E44026
+
+        #css
+            svg
+                color: #1572b6
+
+        #js
+            svg
+                color: #f0db4f
+
+        #node
+            svg
+                color: #83cd29
+
+        #sass
+            svg
+                color: #cc6699
+
+        #react
+            svg
+                color: #61dafb
+
+        #mysql
+            svg
+                color: #00618a
+
+
