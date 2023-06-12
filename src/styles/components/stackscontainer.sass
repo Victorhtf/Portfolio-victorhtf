@@ -7,12 +7,13 @@
         
     .stacks-grid
         display: flex
-        flex-wrap: wrap
+        flex-direction: column
         gap: 1.5rem
     
     
         .stacks-card
-            @include mixins.center
+            display: flex
+            align-items: center
             gap: 1rem
             padding: 1rem
             border: 1px solid #333

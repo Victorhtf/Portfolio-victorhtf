@@ -11,13 +11,13 @@ import {
 import "../styles/components/stackscontainer.sass";
 
 const mystacks = [
-  { id: "html", name: "HTML5", icon: <DiHtml5 /> },
-  { id: "css", name: "CSS3", icon: <DiCss3 /> },
-  { id: "js", name: "JavaScript", icon: <DiJsBadge /> },
-  { id: "node", name: "Node.js", icon: <DiNodejsSmall /> },
-  { id: "react", name: "React", icon: <DiReact /> },
-  { id: "sass", name: "SASS", icon: <DiSass /> },
-  { id: "mysql", name: "MySQL", icon: <DiMysql /> },
+  { id: "html", name: "HTML5", description: "I have worked with HTML", icon: <DiHtml5 /> },
+  { id: "css", name: "CSS3", description: "I have worked with CSS3", icon: <DiCss3 /> },
+  { id: "js", name: "JavaScript", description: "I have worked with Javascript", icon: <DiJsBadge /> },
+  { id: "node", name: "Node.js", description: "I have worked with Node", icon: <DiNodejsSmall /> },
+  { id: "react", name: "React", description: "I have worked with React", icon: <DiReact /> },
+  { id: "sass", name: "SASS", description: "I have worked with SASS", icon: <DiSass /> },
+  { id: "mysql", name: "MySQL", description: "I have worked with MySQL", icon: <DiMysql /> },
 
 ]
 
@@ -31,7 +31,7 @@ const StacksContainer = () => {
             {stack.icon}
             <div className="stacks-info">
               <h3>{stack.name}</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magni, praesentium dicta nisi molestiae tempora voluptas?</p>
+              <p>{stack.description}</p>
             </div>
           </div>
         ))}
