@@ -1,6 +1,5 @@
-import {
-  DiHtml5,
-  DiCss3,
+import { SiNextdotjs } from "react-icons/si"
+import { 
   DiJsBadge,
   DiNodejsSmall,
   DiReact,
@@ -11,13 +10,12 @@ import {
 import "../styles/components/stackscontainer.sass";
 
 const mystacks = [
-  { id: "html", name: "HTML5", description: "I have worked with HTML", icon: <DiHtml5 /> },
-  { id: "css", name: "CSS3", description: "I have worked with CSS3", icon: <DiCss3 /> },
-  { id: "js", name: "JavaScript", description: "I have worked with Javascript", icon: <DiJsBadge /> },
-  { id: "node", name: "Node.js", description: "I have worked with Node", icon: <DiNodejsSmall /> },
-  { id: "react", name: "React", description: "I have worked with React", icon: <DiReact /> },
-  { id: "sass", name: "SASS", description: "I have worked with SASS", icon: <DiSass /> },
-  { id: "mysql", name: "MySQL", description: "I have worked with MySQL", icon: <DiMysql /> },
+  { id: "js", name: "JavaScript", description: "Basic level", icon: <DiJsBadge /> },
+  { id: "node", name: "Node.js", description: "Basic level", icon: <DiNodejsSmall /> },
+  { id: "react", name: "React.js", description: "Intermediate level", icon: <DiReact /> },
+  { id: "sass", name: "SASS", description: "Intermediate level", icon: <DiSass /> },
+  { id: "next", name: "Next.js", description: "Basic level", icon: <SiNextdotjs /> },
+  { id: "mysql", name: "MySQL", description: "Intermediate level", icon: <DiMysql /> },
 
 ]
 
@@ -41,3 +39,4 @@ const StacksContainer = () => {
 };
 
 export default StacksContainer;
+  
