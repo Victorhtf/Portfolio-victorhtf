@@ -16,7 +16,6 @@ const mystacks = [
   { id: "sass", name: "SASS", description: "Intermediate level", icon: <DiSass /> },
   { id: "next", name: "Next.js", description: "Basic level", icon: <SiNextdotjs /> },
   { id: "mysql", name: "MySQL", description: "Intermediate level", icon: <DiMysql /> },
-
 ]
 
 const StacksContainer = () => {
