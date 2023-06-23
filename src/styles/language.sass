@@ -1,0 +1,74 @@
+@use "./variables"
+@use "./mixins"
+
+
+.language
+    display: flex
+    align-items: center
+    background: #e6e6e6
+    padding: 10px 20px 10px 20px
+    border-radius: 10px
+    z-index: 999
+    margin-right: 30px
+
+
+    &:hover
+        transform: scale(1.1)
+        transition: 0.5s
+        background: variables.$gradient
+
+    .en
+        font-family: variables.$emoji
+        font-size: 1.5rem
+        margin-right: 6px
+        @include mixins.center
+        
+    .switch
+        position: relative
+        width: 0px
+        padding-top: -100px
+        display: flex
+        align-self: center
+
+        &:before
+            content: ""
+            position: absolute
+            width: 40px
+            height: 20px
+            background: #333
+            border-radius: 25px
+            display: flex
+            align-self: center
+
+        &:checked
+            &:before
+                background: #00a1ff
+
+        &:after
+            content: ""
+            position: absolute
+            left: 0px
+            width: 20px
+            height: 20px
+            background: #fff
+            border-radius: 25px
+            transition: 0.25s
+            border: 2px solid #333
+            box-sizing: border-box
+            display: flex
+            align-self: center
+
+        &.switch
+            &:checked
+                &:after
+                    left: 20px
+                    border: 2px solid #00a1ff
+                    display: flex
+                    align-self: center
+
+
+    .pt
+        font-family: variables.$emoji
+        font-size: 1.5rem
+        margin-left: 48px
+        @include mixins.center
