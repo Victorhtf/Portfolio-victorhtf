@@ -2,30 +2,59 @@
 @use '../variables'
 
 .stacks-container
+    display: flex
+    justify-content: center
     margin-bottom: 1rem
 
-        
     .stacks-grid
         display: flex
-        flex-direction: column
         gap: 1.5rem
-    
-    
+        flex-wrap: wrap
+        justify-content: space-around
+        margin-bottom: 1rem
+
+        @media (max-width: 1060px)
+            flex-direction: column
+            width: 100%
+
+        @media (max-width: 1060px)
+            display: flex
+            width: 100%
+            flex-direction: column
+
         .stacks-card
+            width: 30%
             display: flex
             align-items: center
             gap: 1rem
             padding: 1rem
             border: 1px solid #333
-            widht: 45%
             border-radius: variables.$card-border-radius
 
-            h3
-                color: variables.$text-color
-                margin-bottom: 1rem
+            .ticon
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                margin-bottom: 10px
+
+                svg
+                    margin: 0px 15px
+
+                h3
+                    color: variables.$text-color
+                    
+
+            @media (max-width: 1060px)
+                width: 100%
+
+
+
+            p
+                font-size: 0.8rem
+                align-items: flex-start
 
             svg
-                font-size: 6rem
+                font-size: 2rem
 
         #html
             svg

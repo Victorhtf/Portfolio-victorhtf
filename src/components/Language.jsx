@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "../styles/language.sass"
+import "../styles/components/language.sass"
 
 const Language = () => {
   return (
@@ -12,4 +12,4 @@ const Language = () => {
   )
 }
 
-export default Language
+export default Language;

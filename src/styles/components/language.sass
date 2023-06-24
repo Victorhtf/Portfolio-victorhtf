@@ -1,5 +1,5 @@
-@use "./variables"
-@use "./mixins"
+@use "../variables"
+@use "../mixins"
 
 
 .language
@@ -10,12 +10,16 @@
     border-radius: 10px
     z-index: 999
     margin-right: 30px
+    box-shadow: variables.$blank-box-shadow
+
+
 
 
     &:hover
         transform: scale(1.1)
         transition: 0.5s
         background: variables.$gradient
+        box-shadow: variables.$orange-box-shadow
 
     .en
         font-family: variables.$emoji
@@ -65,6 +69,10 @@
                     border: 2px solid #00a1ff
                     display: flex
                     align-self: center
+
+            &:checked ~
+                .content.english
+                    display: none
 
 
     .pt
