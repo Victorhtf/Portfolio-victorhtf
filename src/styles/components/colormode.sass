@@ -2,7 +2,7 @@
 @use "../mixins"
 
 
-.language
+.color-mode
     display: flex
     align-items: center
     background: #e6e6e6
@@ -18,11 +18,16 @@
         background: variables.$gradient
         box-shadow: variables.$orange-box-shadow
 
-    .en
+    .light
         font-family: variables.$emoji
-        font-size: 1.5rem
+        font-size: 1.2rem
         margin-right: 6px
         @include mixins.center
+        color: #363636
+
+    &:hover
+        .light
+            color: #fff
         
     .switch
         position: relative
@@ -72,8 +77,13 @@
                     display: none
 
 
-    .pt
+    .dark
         font-family: variables.$emoji
-        font-size: 1.5rem
+        font-size: 1.2rem
         margin-left: 48px
         @include mixins.center
+        color: #363636
+
+    &:hover
+        .dark
+            color: #fff

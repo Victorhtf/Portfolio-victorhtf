@@ -1,10 +1,18 @@
+import React, { useContext } from "react"
+import { LanguageContext } from "../contexts/LanguageContext.jsx"
+
 import "../styles/components/projectscontainer.sass"
+import "../data/data.json"
+
+import data from "../data/data.json"
 
 const ProjectsContainer = () => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <section className="projects-container">
-      <h2>Projects</h2>
-      <p>(Working in progress). Check my Github to see some of my projects. </p>
+      <h2>{language === 'english' ? data['projects-title-PT'] : data['projects-title-EN']}</h2>
+      <p>{language === 'english' ? data['projects-p-PT'] : data['projects-p-EN']}</p>
     </section>
   )
 }

@@ -1,8 +1,10 @@
 import React from 'react'
 
-import "../styles/components/header.sass"
 import Icon from './Icon'
-import Language from './Language'
+import ColorMode from './ColorMode'
+
+import "../styles/components/header.sass"
+import LanguageSwitch from './LanguageSwitch'
 
 const Header = () => {
   return (
@@ -13,8 +15,10 @@ const Header = () => {
         </div>
         <div className="right-items">
           <a href="https://linktr.ee/victorhtf" className='linktree'>Linktree</a>
-          <div className="toggle-language"></div>          
-          <Language/>
+          <div className="toggle-language"></div>   
+          <ColorMode/>
+          <LanguageSwitch/>
+
         </div>
     </div>
   )

@@ -7,20 +7,25 @@ import {
   DiMysql,
 } from "react-icons/di";
 
+import { LanguageContext } from "../contexts/LanguageContext";
+import { useContext } from "react";
+import data from "../data/data.json"
+
 import "../styles/components/stackscontainer.sass";
 
 
 
-const mystacks = [
-  { id: "js", name: "JavaScript", description: "Implementing advanced front-end functionalities. Ability to work with modern JavaScript frameworks and contribute to reusable code libraries.", icon: <DiJsBadge /> },
-  { id: "node", name: "Node.js", description: "Experience in building robust, scalable, and secure server-side applications using Node.js. Skilled at implementing RESTful APIs with Express.js and integrating with various databases.", icon: <DiNodejsSmall /> },
-  { id: "react", name: "React.js", description: "Skilled at building dynamic, responsive websites using React.js. Proficient in component-based architecture, hooks, state management, and the overall React ecosystem.", icon: <DiReact /> },
-  { id: "sass", name: "SASS", description: "Developing dynamic and interactive user interfaces. Ability to create reusable components and work effectively with React state management and related tools.", icon: <DiSass /> },
-  { id: "next", name: "Next.js", description: "Knowledge of Next.js for building modern and efficient web applications. Ability to optimize applications for speed and scalability, and experience with Vercel for continuous deployment.", icon: <SiNextdotjs /> },
-  { id: "mysql", name: "MySQL", description: "Managing relational databases. Experience in writing efficient SQL queries, performance optimization, and integrating back-end data into web applications.", icon: <DiMysql /> },
-]
-
 const StacksContainer = () => {
+  const { language } = useContext(LanguageContext)
+  
+  const mystacks = [
+    { id: "js", name: "JavaScript", description: language === 'english' ? data['stacks-description-js-PT'] : data['stacks-description-js-EN'], icon: <DiJsBadge /> },
+    { id: "node", name: "Node.js", description: language === 'english' ? data['stacks-description-node-PT'] : data['stacks-description-node-EN'], icon: <DiNodejsSmall /> },
+    { id: "react", name: "React.js", description: language === 'english' ? data['stacks-description-react-PT'] : data['stacks-description-react-EN'], icon: <DiReact /> },
+    { id: "sass", name: "SASS", description: language === 'english' ? data['stacks-description-sass-PT'] : data['stacks-description-sass-EN'], icon: <DiSass /> },
+    { id: "next", name: "Next.js", description: language === 'english' ? data['stacks-description-next-PT'] : data['stacks-description-next-EN'], icon: <SiNextdotjs /> },
+    { id: "mysql", name: "MySQL", description: language === 'english' ? data['stacks-description-mysql-PT'] : data['stacks-description-mysql-EN'], icon: <DiMysql /> },
+  ]
   return ( 
     <section className="stacks-container">
       <h2>Stacks</h2>

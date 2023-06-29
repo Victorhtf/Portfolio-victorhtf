@@ -1,0 +1,57 @@
+    {
+    "about-title-EN": "About me",
+    "about-title-PT": "Sobre mim",
+
+    "about-p1-EN": "It's good to see you there! I'm Victor Formisano, a 23-year-old Web Software Engineer based in Brazil. I have experience working with technologies like Node.js, Next.js, React.js, SASS, MySQL, Git, and Django. I have a degree in Business and Administration, which provides me with experience in team management, business administration, and business rules.",
+    "about-p1-PT": "É bom te ver aqui! Eu sou Victor Formisano, um Engenheiro de Software Web, de 23 anos que mora no Brasil. Tenho experiência em trabalhar com tecnologias como Node.js, Next.js, React.js, SASS, MySQL, Git e Django. Sou formado em Administração, o que me proporciona experiência em gestão de equipes, administração de empresas e regras de negócios.",
+
+    "about-p2-EN": "I started my career as a developer in January 2022 when I was hired to work in inside sales at Dryve, a company with an annual revenue of over 70 million dollars. I identified and improved processes using programming. After demonstrating a strong commitment and hard work, I was promoted to Technical Lead in Customer Acquisition department with the goal of reducing customer acquisition costs. I had the opportunity to manage a team of 3 people and developed an API that reduced lead generation costs by 20% and optimized processes to increase productivity.",    "about-p2-PT": "Comecei minha carreira como desenvolvedor em janeiro de 2022, quando fui contratado para trabalhar em vendas internas na Dryve, uma empresa com receita anual de mais de 70 milhões de dólares. Identifiquei e aprimorei processos usando programação. Após demonstrar um forte comprometimento e trabalho duro, fui promovido a Líder Técnico no departamento de Aquisição de Clientes, com o objetivo de reduzir os custos de aquisição de clientes. Tive a oportunidade de gerenciar uma equipe de 3 pessoas e desenvolvi uma API que reduziu os custos de geração de leads em 20% e otimizou processos para aumentar a produtividade.",
+
+    "about-p3-EN": "Later on, I worked as a systems developer and created a website where I reached 50,000 monthly impressions with GoogleAds. These experiences were incredible as I worked with various technologies such as Django, PowerBI, FastAPI, and R, expanding my knowledge in different development areas. Since December 2023, I have been determined and focused on enhancing my web skills (React, Next, SASS, RESTful API and others) and securing a position in the field.",    "about-p3-PT": "Sou um entusiasta do design apaixonado por aprender novas tecnologias. Tenho desenvolvido projetos pessoais de baixo código desde 2018. Amo minha família e sonho em morar no exterior. Além disso, gosto de jogar videogame e aprecio um bom design. Estou procurando ativamente oportunidades para contribuir com projetos inovadores.",
+    "about-p3-PT": "Desde então, trabalhei como desenvolvedor de sistemas e criei um site onde alcancei 50.000 impressões mensais com o GoogleAds. Essas experiências foram incríveis, pois trabalhei com várias tecnologias, como Django, PowerBI, FastAPI e R, expandindo meus conhecimentos em diferentes áreas de desenvolvimento. Desde dezembro de 2023, tenho me dedicado e focado em aprimorar minhas habilidades web (React, Next, SASS, RESTful API e outras) e garantir uma posição na área.",
+
+    "about-p4-EN": "I am a design enthusiast passionate about learning new technologies. I have been developing personal low-code projects since 2018. I love my family and dream of living abroad. Additionally, I enjoy playing video games and appreciate good design. I am actively seeking opportunities to contribute to innovative projects.",
+    "about-p4-PT": "Sou um entusiasta de design e apaixonado por aprender novas tecnologias. Tenho desenvolvido projetos pessoais low-code desde 2018. Amo minha família e sonho em morar no exterior. Além disso, gosto de jogar videogame e aprecio um bom design. Estou procurando ativamente oportunidades para contribuir com projetos inovadores.",
+    
+    "projects-description-PT": "Descrição de projetos em Português",
+    "projects-description-EN": "Descrição de projetos em Ingles",
+    
+    "info-phone-title-EN": "Phone Number",
+    "info-phone-title-PT": "Telefone",
+    "info-location-title-EN": "Location" ,
+    "info-location-title-PT": "Localização",
+    "info-location-p-EN": "São Paulo - Brazil ",
+    "info-location-p-PT": "Ribeirão Preto - SP",
+
+    "projects-title-EN": "Projects",
+    "projects-title-PT": "Projetos", 
+    "projects-p-EN": "Work in Progress. Check my Github to see some of my projects",
+    "projects-p-PT":  "Em desenvolvimento. Acesse meu Github para ver alguns dos meus projetos",
+
+    "sidebar-ocupation-EN": "Fullstack developer",
+    "sidebar-ocupation-PT": "Desenvolvedor Fullstack",
+
+    "sidebar-resume-EN": "Download resume",
+    "sidebar-resume-PT": "Download do currículo",
+
+    "stacks-title-EN": "Stacks",
+    "stacks-title-PT": "Tecnologias",
+
+    "stacks-description-js-EN": "Implementing advanced front-end functionalities. Ability to work with modern JavaScript frameworks and contribute to reusable code libraries.",
+    "stacks-description-js-PT": "Implementando funcionalidades avançadas de front-end. Habilidade para trabalhar com frameworks JavaScript modernos e contribuir para bibliotecas de código reutilizáveis.",
+    "stacks-description-node-EN": "Experience in building robust, scalable, and secure server-side applications using Node.js. Skilled at implementing RESTful APIs with Express.js and integrating with various databases.",
+    "stacks-description-node-PT": "Experiência em construir aplicações robustas, escaláveis e seguras no lado do servidor utilizando Node.js. Habilidade em implementar APIs RESTful com Express.js e integração com diversos bancos de dados.",
+    "stacks-description-sass-EN": "Developing dynamic and interactive user interfaces. Ability to create reusable components and work effectively with React state management and related tools.",
+    "stacks-description-sass-PT": "Desenvolvendo interfaces de usuário dinâmicas e interativas. Habilidade para criar componentes reutilizáveis e trabalhar de forma eficaz com o gerenciamento de estado do React e ferramentas relacionadas.",
+    "stacks-description-react-EN": "Skilled at building dynamic, responsive websites using React.js. Proficient in component-based architecture, hooks, state management, and the overall React ecosystem.",
+    "stacks-description-react-PT": "Habilidade em construir websites dinâmicos e responsivos usando React.js. Proficiente em arquitetura baseada em componentes, hooks, gerenciamento de estado e ecossistema geral do React.",
+    "stacks-description-next-EN": "Knowledge of Next.js for building modern and efficient web applications. Ability to optimize applications for speed and scalability, and experience with Vercel for continuous deployment.",
+    "stacks-description-next-PT": "Conhecimento do Next.js para construção de aplicações web modernas e eficientes. Habilidade em otimizar aplicações para velocidade e escalabilidade, e experiência com o Vercel para implantação contínua.",
+    "stacks-description-mysql-EN": "Managing relational databases. Experience in writing efficient SQL queries, performance optimization, and integrating back-end data into web applications.",
+    "stacks-description-mysql-PT": "Gerenciamento de bancos de dados relacionais. Experiência em escrever consultas SQL eficientes, otimização de desempenho e integração de dados de back-end em aplicações web.",
+    "stacks-description-python-EN": "Versatile programming language used for web development, data analysis, machine learning, and more. Proficient in writing clean and efficient Python code for various applications.",
+    "stacks-description-python-PT": "Linguagem de programação versátil usada para desenvolvimento web, análise de dados, aprendizado de máquina e muito mais. Proficiente em escrever código Python limpo e eficiente para diversas aplicações."
+}
+
+
+    
