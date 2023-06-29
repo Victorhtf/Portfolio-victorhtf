@@ -1,10 +1,8 @@
 import React from 'react'
-
 import { MdDarkMode } from 'react-icons/md'
 import { BsFillLightbulbFill } from 'react-icons/bs'
 
 import "../styles/components/colormode.sass"
-
 
 const ColorMode = () => {
   return (

@@ -1,23 +1,21 @@
 @use "../mixins"
 @use "../variables"
     
-    
 .header-container
     width: 100%
-    box-sizing: border-box
     height: 100px
-    padding-left: 20px
     display: flex
     align-items: center
     justify-content: space-between
+    box-sizing: border-box
+    padding-left: 20px
     
     .left-items
         display: flex
 
-
     .icon
-        min-width: 2rem
         width: 4.5rem
+        min-width: 2rem
         margin-right: 40px
         margin-left: 3rem
         fill: white
@@ -30,9 +28,8 @@
         -webkit-text-fill-color: transparent
 
         @media (max-width: 930px)
-            background-color: yellow
-            padding-right: 20px
             font-size: 2rem
+            padding-right: 20px
 
     .right-items
         display: flex
@@ -45,21 +42,21 @@
         background: #e6e6e6
         color: #363636
         border-radius: 10px
-        padding: 0.4rem
         text-decoration: none
+        padding: 0.4rem
         font-weight: 600
         margin-right: 20px
-        @include mixins.center
         box-shadow: variables.$blank-box-shadow
+        @include mixins.center
 
         &:hover
             color: white
-            background: variables.$gradient
             transform: scale(1.1)
+            background: variables.$gradient
             box-shadow: variables.$orange-box-shadow
 
         &:after
-            position: relative
             width: 1px
             height: 10px
             background-color: white
+            position: relative

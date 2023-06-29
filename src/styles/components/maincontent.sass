@@ -1,41 +1,34 @@
 @use "../variables"
 @use "../mixins"
-    
 
 #main-content
-    flex: 2 1 0
-    padding: 0.1rem
-    margin-right: 2rem
     display: flex
     flex-direction: column
     text-align: justify
+    flex: 2 1 0
+    padding: 0.1rem
+    margin-right: 2rem
 
     section
         display: flex
         flex-direction: column
 
     h2
-        color: variables.$text-color
-        font-size: 2.2rem
         @include mixins.center
         justify-content: start
+        font-size: 2.2rem
         gap: 1rem
         margin-bottom: 1.3rem
+        color: variables.$text-color
 
         &:after
             @include mixins.gradient-border
 
     p
-        color: variables.$text-color-secondary
         margin-bottom: 1rem
         line-height: 1.3rem
+        color: variables.$text-color-secondary
 
     .btn
         align-self: start
         @include mixins.btn
-        
-
-    
-            
-            
-

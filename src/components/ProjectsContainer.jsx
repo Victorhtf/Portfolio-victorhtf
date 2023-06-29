@@ -2,7 +2,6 @@ import React, { useContext } from "react"
 import { LanguageContext } from "../contexts/LanguageContext.jsx"
 
 import "../styles/components/projectscontainer.sass"
-import "../data/data.json"
 
 import data from "../data/data.json"
 

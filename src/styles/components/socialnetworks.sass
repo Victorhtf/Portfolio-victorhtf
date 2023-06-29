@@ -7,12 +7,12 @@
     margin: 1rem 0
 
     .social-btn
+        @include mixins.center
         padding: .6rem
-        background-color: variables.$bg-color-secondary
-        border-radius: variables.$card-border-radius
         color: #333
         font-size: 1.3rem
-        @include mixins.center
+        border-radius: variables.$card-border-radius
+        background-color: variables.$bg-color-secondary
 
     #linkedin
         color: #0072b1
@@ -24,8 +24,8 @@
         color: #d1239a
 
     :hover
-        background: variables.$gradient
         transform: scale(1.10)
+        background: variables.$gradient
         > svg
             color: variables.$text-color
 

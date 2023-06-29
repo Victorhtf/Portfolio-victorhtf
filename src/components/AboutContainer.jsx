@@ -1,5 +1,5 @@
-import { LanguageContext } from  "../contexts/LanguageContext.jsx"
 import { useContext } from "react"
+import { LanguageContext } from  "../contexts/LanguageContext.jsx"
 import data from "../data/data.json"
 
 import "../styles/components/aboutcontainer.sass"

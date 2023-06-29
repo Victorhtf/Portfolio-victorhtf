@@ -49,8 +49,8 @@
     "stacks-description-next-PT": "Conhecimento do Next.js para construção de aplicações web modernas e eficientes. Habilidade em otimizar aplicações para velocidade e escalabilidade, e experiência com o Vercel para implantação contínua.",
     "stacks-description-mysql-EN": "Managing relational databases. Experience in writing efficient SQL queries, performance optimization, and integrating back-end data into web applications.",
     "stacks-description-mysql-PT": "Gerenciamento de bancos de dados relacionais. Experiência em escrever consultas SQL eficientes, otimização de desempenho e integração de dados de back-end em aplicações web.",
-    "stacks-description-python-EN": "Versatile programming language used for web development, data analysis, machine learning, and more. Proficient in writing clean and efficient Python code for various applications.",
-    "stacks-description-python-PT": "Linguagem de programação versátil usada para desenvolvimento web, análise de dados, aprendizado de máquina e muito mais. Proficiente em escrever código Python limpo e eficiente para diversas aplicações."
+    "stacks-description-python-EN": "SPA Website creation, API developing with FastAPI, data analysis, and automation systems. Proficient in writing clean and efficient Python code for various applications.",
+    "stacks-description-python-PT": "Criação de websites SPA com Django, desenvolvimento de API com FastAPI, análise de dados, e automação de sistemas. Proficiente em escrever código Python limpo e eficiente para diversas aplicações."
 }
 
 

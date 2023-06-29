@@ -1,10 +1,9 @@
 import React from 'react'
-
 import Icon from './Icon'
 import ColorMode from './ColorMode'
+import LanguageSwitch from './LanguageSwitch'
 
 import "../styles/components/header.sass"
-import LanguageSwitch from './LanguageSwitch'
 
 const Header = () => {
   return (

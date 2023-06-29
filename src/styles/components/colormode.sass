@@ -1,7 +1,6 @@
 @use "../variables"
 @use "../mixins"
 
-
 .color-mode
     display: flex
     align-items: center
@@ -22,29 +21,29 @@
         font-family: variables.$emoji
         font-size: 1.2rem
         margin-right: 6px
-        @include mixins.center
         color: #363636
+        @include mixins.center
 
     &:hover
         .light
             color: #fff
         
     .switch
-        position: relative
         width: 0px
-        padding-top: -100px
         display: flex
         align-self: center
+        padding-top: -100px
+        position: relative
 
         &:before
             content: ""
-            position: absolute
             width: 40px
             height: 20px
-            background: #333
-            border-radius: 25px
             display: flex
             align-self: center
+            background: #333
+            border-radius: 25px
+            position: absolute
 
         &:checked
             &:before
@@ -52,37 +51,36 @@
 
         &:after
             content: ""
-            position: absolute
-            left: 0px
             width: 20px
             height: 20px
+            display: flex
+            align-self: center
             background: #fff
+            left: 0px
             border-radius: 25px
             transition: 0.25s
             border: 2px solid #333
             box-sizing: border-box
-            display: flex
-            align-self: center
+            position: absolute
 
         &.switch
             &:checked
                 &:after
-                    left: 20px
-                    border: 2px solid #00a1ff
                     display: flex
                     align-self: center
+                    left: 20px
+                    border: 2px solid #00a1ff
 
             &:checked ~
                 .content.english
                     display: none
 
-
     .dark
         font-family: variables.$emoji
         font-size: 1.2rem
         margin-left: 48px
-        @include mixins.center
         color: #363636
+        @include mixins.center
 
     &:hover
         .dark

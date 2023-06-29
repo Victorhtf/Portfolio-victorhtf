@@ -1,12 +1,12 @@
+import { useContext } from 'react';
 import { AiFillPhone, AiOutlineMail , AiFillEnvironment } from 'react-icons/ai';
+import { LanguageContext } from '../contexts/LanguageContext';
 import data from "../data/data.json"
 
 import "../styles/components/informationalcontainer.sass";
-import { useContext } from 'react';
-import { LanguageContext } from '../contexts/LanguageContext';
 
 const InformationContainer = () => {
-    const { language } = useContext(LanguageContext)
+    const { language } = useContext(LanguageContext);
   return (
     <section id="information">
         <div className='info-card'>

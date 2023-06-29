@@ -2,13 +2,11 @@ import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa';
 
 import "../styles/components/socialnetworks.sass"
 
-
 const socialNetworks = [
   { name: "linkedin", url:"https://www.linkedin.com/in/victor-formisano/", icon: <FaLinkedinIn/> },
   { name: "github", url:"https://github.com/Victorhtf", icon: <FaGithub/> },
   { name: "instagram", url:"https://www.instagram.com/victorhtf/", icon: <FaInstagram/> },
 ];
-
 
 const SocialNetworks = () => {
   return ( 

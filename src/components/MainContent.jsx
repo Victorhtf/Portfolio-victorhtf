@@ -1,7 +1,8 @@
-import "../styles/components/maincontent.sass"
 import AboutContainer from "./AboutContainer.jsx"
 import ProjectsContainer from "./ProjectsContainer.jsx"
 import StacksContainer from "./StacksContainer.jsx"
+
+import "../styles/components/maincontent.sass"
 
 const MainContent = () => {
   return (

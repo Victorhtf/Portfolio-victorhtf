@@ -2,15 +2,15 @@
 @use '../mixins'
 
 #sidebar
-    background-color: variables.$bg-color
+    display: flex
+    text-align: center
+    align-items: center
     flex: 1 1 0
     border-radius: variables.$container-border-radius
-    display: flex
-    align-items: center
-    text-align: center
     flex-direction: column
-    position: relative
     padding: 3rem 0
+    background-color: variables.$bg-color
+    position: relative
 
     img
         max-width: 70%
@@ -19,22 +19,21 @@
         top: 1rem
 
     .title
+        @include mixins.center
+        margin-top: 4rem
+        padding: .8rem 1.2rem
         color: variables.$text-color-secondary
         background-color: variables.$bg-color-secondary
         border-radius: variables.$card-border-radius
-        margin-top: 4rem
-        padding: .8rem 1.2rem
-        @include mixins.center
         
     .btn
         @include mixins.btn
         :hover
-            background: variables.$gradient
             transform: scale(1.10)
+            background: variables.$gradient
             > svg
                 color: variables.$text-color
                 
-
         .p
             :hover
                 background-color: variables.$gradient
