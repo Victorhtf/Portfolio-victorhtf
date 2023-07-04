@@ -1,0 +1,32 @@
+@use '../../settings/light-mode/mixins'
+@use '../../settings/light-mode/variables'
+@use '../../settings/decorations'
+
+.social-networks.light
+    gap: 1rem
+    margin: 1rem 0
+    @include decorations.center
+    
+    .social-btn
+        padding: .6rem
+        color: variables.$text-color
+        font-size: 1.3rem
+        border-radius: 5px
+        background-color: variables.$card-color
+        @include decorations.center
+        @include mixins.card
+        
+    #linkedin
+        color: #0072b1
+
+    #github
+        color: #585858
+
+    #instagram
+        color: #d1239a
+
+    :hover
+        transform: scale(1.10)
+        background: variables.$gradient
+        > svg
+            color: #fff   

@@ -1,29 +1,32 @@
-@use "../variables"
-@use "../mixins"
+@use '../../settings/light-mode/mixins'
+@use '../../settings/light-mode/variables'
+@use '../../settings/decorations'
 
-#main-content
+.main-content.light
     display: flex
     flex-direction: column
     text-align: justify
     flex: 2 1 0
-    padding: 0.1rem
     margin-right: 2rem
+    gap: 3rem
+    border-radius: decorations.$card-border-radius
 
     section
         display: flex
         flex-direction: column
 
     h2
-        @include mixins.center
         justify-content: start
         font-size: 2.2rem
         gap: 1rem
         margin-bottom: 1.3rem
         color: variables.$text-color
+        display: flex
+        align-items: center
 
         &:after
             @include mixins.gradient-border
-
+            
     p
         margin-bottom: 1rem
         line-height: 1.3rem

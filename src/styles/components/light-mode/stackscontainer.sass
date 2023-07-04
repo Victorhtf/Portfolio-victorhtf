@@ -1,0 +1,94 @@
+@use '../../settings/light-mode/mixins'
+@use '../../settings/light-mode/variables'
+@use '../../settings/decorations'
+    
+
+.stacks-container.light
+    display: flex
+    justify-content: center
+    margin-bottom: 1rem
+    padding: 2rem
+    background-color: variables.$card-color
+    border-radius: decorations.$card-border-radius
+    @include mixins.card
+    
+
+    .stacks-grid
+        display: flex
+        gap: 1.5rem
+        flex-wrap: wrap
+        justify-content: space-around
+
+        @media (max-width: 1060px)
+            width: 100%
+            flex-direction: column
+
+        @media (max-width: 1060px)
+            display: flex
+            flex-direction: column
+            width: 100%
+
+        .stacks-card
+            width: 30%
+            display: flex
+            align-items: center
+            gap: 1rem
+            padding: 1rem
+
+            .ticon
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                margin-bottom: 10px
+
+                svg
+                    margin: 0px 15px
+
+                h3
+                    color: variables.$text-color
+                    
+            @media (max-width: 1060px)
+                width: 100%
+
+            p
+                font-size: 0.8rem
+                align-items: flex-start
+
+            svg
+                font-size: 2rem
+
+        #html
+            svg
+                color: #E44026
+
+        #css
+            svg
+                color: #1572b6
+
+        #js
+            svg
+                color: #f0db4f
+
+        #node
+            svg
+                color: #83cd29
+
+        #sass
+            svg
+                color: #cc6699
+
+        #react
+            svg
+                color: #61dafb
+
+        #mysql
+            svg
+                color: #00618a
+        
+        #next
+            svg
+                color: #363636
+
+        #python
+            svg
+                color: #FFD43B

@@ -1,6 +1,10 @@
 import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa';
 
-import "../styles/components/socialnetworks.sass"
+import { useContext } from 'react';
+import { ThemeContext } from '../contexts/ColorModeContext';
+
+import "../styles/components/dark-mode/socialnetworks.sass"
+import "../styles/components/light-mode/socialnetworks.sass"
 
 const socialNetworks = [
   { name: "linkedin", url:"https://www.linkedin.com/in/victor-formisano/", icon: <FaLinkedinIn/> },
@@ -9,8 +13,9 @@ const socialNetworks = [
 ];
 
 const SocialNetworks = () => {
+  const{ theme } = useContext(ThemeContext)
   return ( 
-    <section id="social-networks">
+    <section className={`social-networks ${theme}`}>
       {socialNetworks.map((network) => (
         <a href={network.url} className='social-btn' id={network.name} key={network.name}>
           {network.icon}

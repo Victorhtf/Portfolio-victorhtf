@@ -1,18 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { MdDarkMode } from 'react-icons/md'
 import { BsFillLightbulbFill } from 'react-icons/bs'
 
-import "../styles/components/colormode.sass"
+import { ThemeContext } from '../contexts/ColorModeContext'
+
+import "../styles/components/dark-mode/colormode.sass"
+import "../styles/components/light-mode/colormode.sass"
+
 
 const ColorMode = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext)
   return (
-    <div className='color-mode'>
+    <div className={`color-mode ${theme}`}>
       <span className='light'>
         <BsFillLightbulbFill/>
       </span>
-      <input type='checkbox' className='switch'></input>
+      <input type='checkbox' checked={theme === 'dark'} onChange={toggleTheme} className='switch'></input>
       <span className='dark'>
-        <MdDarkMode color/>
+        <MdDarkMode/>
       </span>
     </div>
   )

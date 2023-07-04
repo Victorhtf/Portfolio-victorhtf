@@ -1,0 +1,27 @@
+@use "./light-mode/variables"
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap')    
+
+
+$emoji: 'Noto Color Emoji', sans-serif
+$font-stack: "Inter", sans-serif
+$container-border-radius: 10px
+$card-border-radius: 20px 
+
+@mixin center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin card
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75)
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75)
+
+@mixin box
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75)
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75)
+    border-radius: 5px
+

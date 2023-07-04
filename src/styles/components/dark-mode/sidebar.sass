@@ -1,0 +1,41 @@
+@use '../../settings/dark-mode/mixins'
+@use '../../settings/dark-mode/variables'
+@use '../../settings/decorations'
+    
+
+.sidebar.dark
+    display: flex
+    text-align: center
+    align-items: center
+    flex: 1 1 0
+    border-radius: decorations.$container-border-radius
+    flex-direction: column
+    padding: 3rem 0
+    background-color: variables.$bg-color
+    position: relative
+
+    img
+        max-width: 70%
+        border-radius: decorations.$container-border-radius
+        position: relative
+        top: 1rem
+
+    .title
+        margin: 3rem 0rem 1.7rem 0rem
+        padding: .8rem 1.2rem
+        color: variables.$text-color-secondary
+        background-color: variables.$bg-color-secondary
+        border-radius: decorations.$card-border-radius
+        @include decorations.box  
+        
+    .btn
+        @include mixins.btn
+        :hover
+            transform: scale(1.10)
+            background: variables.$gradient
+            > svg
+                color: variables.$text-color
+                
+        .p
+            :hover
+                background-color: variables.$gradient
