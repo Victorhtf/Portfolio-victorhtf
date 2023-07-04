@@ -1,0 +1,10 @@
+@use '../../settings/dark-mode/mixins'
+@use '../../settings/dark-mode/variables'
+@use '../../settings/decorations'
+
+.about-container.dark
+    padding: 2rem
+    background-color: variables.$card-color
+    border-radius: decorations.$card-border-radius
+    @include mixins.card
+    

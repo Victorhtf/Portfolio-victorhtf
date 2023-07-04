@@ -1,15 +1,18 @@
+import { useContext } from "react";
 import { SiNextdotjs } from "react-icons/si"
-import { 
-  DiJsBadge, DiNodejsSmall, DiReact, DiSass, DiMysql, DiPython} from "react-icons/di";
+import { DiJsBadge, DiNodejsSmall, DiReact, DiSass, DiMysql, DiPython} from "react-icons/di";
 
 import { LanguageContext } from "../contexts/LanguageContext";
-import { useContext } from "react";
+import { ThemeContext } from "../contexts/ColorModeContext";
+
 import data from "../data/data.json"
 
-import "../styles/components/stackscontainer.sass";
+import "../styles/components/dark-mode/stackscontainer.sass"
+import "../styles/components/light-mode/stackscontainer.sass"
 
 const StacksContainer = () => {
   const { language } = useContext(LanguageContext);
+  const { theme } = useContext(ThemeContext)
   
   const mystacks = [
     { id: "js", name: "JavaScript", description: language === 'english' ? data['stacks-description-js-PT'] : data['stacks-description-js-EN'], icon: <DiJsBadge /> },
@@ -22,7 +25,7 @@ const StacksContainer = () => {
   ];
 
   return ( 
-    <section className="stacks-container">
+    <section className={`stacks-container ${theme}`}>
       <h2>Stacks</h2>
       <div className="stacks-grid">
         {mystacks.map((stack) => (

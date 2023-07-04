@@ -1,19 +1,21 @@
-@use "../variables"
-@use '../mixins'
+@use '../../settings/dark-mode/mixins'
+@use '../../settings/dark-mode/variables'
+@use '../../settings/decorations'
 
-#social-networks
-    @include mixins.center
+.social-networks.dark
     gap: 1rem
     margin: 1rem 0
+    @include decorations.center
 
     .social-btn
-        @include mixins.center
         padding: .6rem
-        color: #333
+        color: variables.$text-color
         font-size: 1.3rem
-        border-radius: variables.$card-border-radius
+        border-radius: 5px
         background-color: variables.$bg-color-secondary
-
+        @include decorations.center
+        @include mixins.card
+                    
     #linkedin
         color: #0072b1
 

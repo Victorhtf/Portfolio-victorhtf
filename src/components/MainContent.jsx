@@ -1,17 +1,22 @@
 import AboutContainer from "./AboutContainer.jsx"
-import ProjectsContainer from "./ProjectsContainer.jsx"
+import Projects from "./Projects.jsx"
 import StacksContainer from "./StacksContainer.jsx"
 
-import "../styles/components/maincontent.sass"
+import { useContext } from "react"
+import { ThemeContext } from '../contexts/ColorModeContext'
+
+import "../styles/components/light-mode/maincontent.sass"
+import "../styles/components/dark-mode/maincontent.sass"
 
 const MainContent = () => {
+  const { theme } = useContext(ThemeContext)
+
   return (
-    <main id="main-content">
+    <main className={`main-content ${theme}`}>
       <AboutContainer/>
-      <ProjectsContainer/>
+      <Projects/>
       <StacksContainer/>
     </main>
-
   )
 }
 

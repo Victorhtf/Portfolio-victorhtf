@@ -1,0 +1,63 @@
+@use '../../settings/dark-mode/mixins'
+@use '../../settings/dark-mode/variables'
+@use '../../settings/decorations'
+       
+.header-container.dark
+    width: 100%
+    height: 100px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    box-sizing: border-box
+    padding-left: 20px
+    
+    .left-items
+        display: flex
+
+    .icon
+        width: 4.5rem
+        min-width: 2rem
+        margin-right: 40px
+        margin-left: 3rem
+        fill: white
+
+    h1
+        font-size: 2.8rem
+        text-transform: uppercase
+        background: variables.$gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+        @media (max-width: 930px)
+            font-size: 2rem
+            padding-right: 20px
+
+    .right-items
+        display: flex
+        justify-content: center
+        flex-direction: row
+
+    .linktree
+        width: 150px
+        height: 50px
+        background-color: variables.$card-color
+        color: variables.$text-color
+        border-radius: 10px
+        text-decoration: none
+        padding: 0.4rem
+        font-weight: 600
+        margin-right: 20px
+        box-shadow: variables.$blank-box-shadow
+        @include decorations.center
+
+        &:hover
+            color: variables.$card-color
+            transform: scale(1.1)
+            background: variables.$gradient
+            box-shadow: variables.$orange-box-shadow
+
+        &:after
+            width: 1px
+            height: 10px
+            background-color: white
+            position: relative

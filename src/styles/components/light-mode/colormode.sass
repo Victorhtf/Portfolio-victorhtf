@@ -1,15 +1,18 @@
-@use "../variables"
-@use "../mixins"
+@use '../../settings/light-mode/mixins'
+@use '../../settings/light-mode/variables'
+@use '../../settings/decorations'
 
-.color-mode
+.color-mode.light
     display: flex
     align-items: center
-    background: #e6e6e6
+    background: variables.$card-color
     padding: 10px 20px 10px 20px
     border-radius: 10px
     z-index: 999
     margin-right: 30px
     box-shadow: variables.$blank-box-shadow
+    @include decorations.card
+    
 
     &:hover
         transform: scale(1.1)
@@ -18,11 +21,12 @@
         box-shadow: variables.$orange-box-shadow
 
     .light
-        font-family: variables.$emoji
+        font-family: decorations.$emoji
         font-size: 1.2rem
         margin-right: 6px
         color: #363636
-        @include mixins.center
+        @include decorations.center
+        
 
     &:hover
         .light
@@ -76,11 +80,12 @@
                     display: none
 
     .dark
-        font-family: variables.$emoji
+        font-family: decorations.$emoji
         font-size: 1.2rem
         margin-left: 48px
         color: #363636
-        @include mixins.center
+        @include decorations.center
+        
 
     &:hover
         .dark

@@ -1,0 +1,9 @@
+@use '../../settings/light-mode/mixins'
+@use '../../settings/light-mode/variables'
+@use '../../settings/decorations'
+
+.about-container.light
+    padding: 2rem
+    background-color: variables.$card-color
+    border-radius: decorations.$card-border-radius
+    @include mixins.card

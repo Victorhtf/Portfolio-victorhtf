@@ -1,14 +1,18 @@
 import { useContext } from 'react';
 import { AiFillPhone, AiOutlineMail , AiFillEnvironment } from 'react-icons/ai';
 import { LanguageContext } from '../contexts/LanguageContext';
+import { ThemeContext } from "../contexts/ColorModeContext.jsx"
+
 import data from "../data/data.json"
 
-import "../styles/components/informationalcontainer.sass";
+import "../styles/components/dark-mode/informationalcontainer.sass"
+import "../styles/components/light-mode/informationalcontainer.sass"
 
 const InformationContainer = () => {
+    const { theme } = useContext(ThemeContext)
     const { language } = useContext(LanguageContext);
   return (
-    <section id="information">
+    <section className={`information ${theme}`}>
         <div className='info-card'>
             <AiFillPhone id="phone-icon"/>
             <div>

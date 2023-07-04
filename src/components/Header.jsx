@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Icon from './Icon'
 import ColorMode from './ColorMode'
 import LanguageSwitch from './LanguageSwitch'
 
-import "../styles/components/header.sass"
+import { ThemeContext } from '../contexts/ColorModeContext'
+
+import "../styles/components/dark-mode/header.sass"
+import "../styles/components/light-mode/header.sass"
 
 const Header = () => {
+  const { theme } = useContext(ThemeContext)
   return (
-    <div className='header-container'> 
+    <div className={`header-container ${theme}`}> 
         <div className="left-items">
           <Icon/>
           <h1> Victor Formisano </h1>
@@ -17,7 +21,6 @@ const Header = () => {
           <div className="toggle-language"></div>   
           <ColorMode/>
           <LanguageSwitch/>
-
         </div>
     </div>
   )

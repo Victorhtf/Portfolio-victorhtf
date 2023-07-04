@@ -1,0 +1,16 @@
+@use '../../settings/dark-mode/mixins'
+@use '../../settings/dark-mode/variables'
+@use '../../settings/decorations'
+
+
+.projects-container.dark
+    padding: 2rem
+    background-color: variables.$card-color
+    border-radius: decorations.$card-border-radius
+    @include mixins.card
+
+    // .projects-container-grid
+    //     grid: 1fr 1fr
+    //     background-color: red
+
+    
