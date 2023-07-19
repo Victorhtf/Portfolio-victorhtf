@@ -1,4 +1,3 @@
-
 # PORTFÓLIO - Victor Formisano
 
 # Description
@@ -43,6 +42,7 @@ Javascript, Vite, React, SASS, JSON, Hooks (useContext, useState), loop, arrays
 
 
 ## Screenshots
+![Portfolio](https://github.com/Victorhtf/portfolio-victorhtf/assets/126508458/8e3b9441-7e70-4cbe-95e7-be653fc8e0e1)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
 
