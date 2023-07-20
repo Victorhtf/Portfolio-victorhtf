@@ -7,6 +7,7 @@ import { ThemeContext } from '../contexts/ColorModeContext'
 
 import "../styles/components/light-mode/maincontent.sass"
 import "../styles/components/dark-mode/maincontent.sass"
+import Repos from "./Repos.jsx"
 
 const MainContent = () => {
   const { theme } = useContext(ThemeContext)
@@ -16,6 +17,7 @@ const MainContent = () => {
       <AboutContainer/>
       <Projects/>
       <StacksContainer/>
+      <Repos/>
     </main>
   )
 }
