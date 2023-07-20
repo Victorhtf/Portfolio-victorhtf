@@ -1,0 +1,47 @@
+@use '../../settings/light-mode/mixins'
+@use '../../settings/light-mode/variables'
+@use '../../settings/decorations'
+    
+    
+.grid-container.light
+    width: 100%
+    grid-template-columns: 1fr 1fr 1fr
+    display: grid
+    padding: 2rem
+    gap: 2rem
+
+
+    .grid-card
+        display: flex
+        flex-direction: column
+        padding: 1rem
+        max-width: auto
+        max-height: 500px
+        align-items: center
+        gap: 0.5rem
+        border-radius: decorations.$card-border-radius
+        background-color: variables.$card-color
+        border-radius: decorations.$card-border-radius
+        @include mixins.card
+
+        .repo-title
+            margin-top: 0.6rem
+            align-self: start
+            font-size: 1.2rem
+            color: variables.$text-color
+
+            &:after
+                content: ""
+                width: 20px
+                height: 20px
+
+        .repo-thumbnail
+            aspect-ratio: 16/9
+            width: 90%
+
+
+        p 
+            font-size: 0.8rem
+            display: block
+
+    
