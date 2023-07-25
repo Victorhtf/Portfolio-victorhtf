@@ -1,15 +1,16 @@
 import { useState, useEffect, useContext } from 'react';
 
-import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3, FaSass,  } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3, FaSass, FaGithub } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io'
-import { SiNextdotjs, SiTailwindcss, SiTypescript } from 'react-icons/si'
+import { SiNextdotjs, SiTailwindcss, SiTypescript, SiVercel, } from 'react-icons/si'
 
 import { ThemeContext } from "../contexts/ColorModeContext.jsx";
 
-import FoodHub from '../img/FoodHubweb.png';
+import FoodHub from '../img/FoodHub.png';
 import Portfolio from '../img/Portfolio.png';
 import MusicPot from '../img/MusicPot.png'
 import CoupleFinances from '../img/CoupleFinances.png'
+import MeetMatch from '../img/MeetMatch.png'
 
 
 import '../styles/components/light-mode/repos.sass';
@@ -33,8 +34,8 @@ const Repos = () => {
     },
     {
       name: 'MeetMatch',
-      stacks: ['React', 'Node','SASS'],
-      image: Portfolio,
+      stacks: ['Javascript','React', 'Node','SASS'],
+      image: MeetMatch,
     },
     {
       name: 'musicpot',
@@ -100,6 +101,16 @@ const Repos = () => {
               {IconComponents}
               </div>
               <img src={image} className="repo-thumbnail"/>
+              <div className="buttons">
+                <a href='#' className='link'>
+                  <SiVercel className="icon" />
+                  <span className="text">Deploy</span>
+                </a>
+                <a href={repository.html_url} className='link'>
+                  <FaGithub className="icon" />
+                  <span className="text">GitHub</span>
+                </a>
+              </div>
             </div>
           );
         }
