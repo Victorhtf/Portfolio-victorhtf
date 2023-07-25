@@ -10,7 +10,6 @@
     padding: 2rem
     gap: 2rem
 
-
     .grid-card
         display: flex
         flex-direction: column
@@ -19,26 +18,78 @@
         max-height: 500px
         align-items: center
         gap: 0.5rem
+        padding-top: 2rem
         border-radius: decorations.$card-border-radius
         background-color: variables.$card-color
-        border-radius: decorations.$card-border-radius
         @include mixins.card
 
-        .repo-title
-            margin-top: 0.6rem
-            align-self: start
-            font-size: 1.2rem
-            color: variables.$text-color
+        .title-container
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+            width: 100%
+            justify-content: space-between
 
-            &:after
-                content: ""
-                width: 20px
-                height: 20px
+            .repo-title
+                align-self: start
+                font-size: 1.2rem
+                color: variables.$text-color
+                width: 100%
+
+            .balls
+                width: auto
+                display: flex
+                flex-direction: row
+                justify-content: flex-end
+                align-items: center
+                gap: 5px
+
+                .ball1
+                    background-color: #e64443
+                    border-radius: 50%
+                    width: 8px
+                    height: 8px
+
+                .ball2
+                    background-color: #eab308
+                    border-radius: 50%
+                    width: 8px
+                    height: 8px
+
+                .ball3
+                    background-color: #29925d
+                    border-radius: 50%
+                    width: 8px
+                    height: 8px
+
+
+
+        .repo-description
+            margin: 0
+
+        .stacks-container
+            flex-direction: row
+            display: flex
+            align-items: flex-start
+            justify-content: flex-start
+            gap: 0.5rem
+            width: 100%
+            margin-bottom: auto
+
+            .icon
+                width: 25px
+                height: 25px
+                color: variables.$text-color
+
 
         .repo-thumbnail
+            margin-top: 0
             aspect-ratio: 16/9
             width: 90%
-
+            display: flex
+            justify-content: flex-end
+            align-items: flex-end
+            padding-top: 1rem
 
         p 
             font-size: 0.8rem
