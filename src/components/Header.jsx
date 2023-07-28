@@ -14,7 +14,7 @@ const Header = () => {
     <div className={`header-container ${theme}`}> 
         <div className="left-items">
           <Icon/>
-          <h1> Hictor Vugo </h1>
+          <h1> Victor Formisano </h1>
         </div>
         <div className="right-items">
           <a href="https://linktr.ee/victorhtf" className='linktree'>Linktree</a>
